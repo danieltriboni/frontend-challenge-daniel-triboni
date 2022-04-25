@@ -1,5 +1,7 @@
 {
   "name": "frontend-challenge-daniel-triboni",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

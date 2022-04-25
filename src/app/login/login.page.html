@@ -1,0 +1,35 @@
+  <ion-content>
+    <div class="login-logo">
+      <img src="assets/logo.png" alt="Ionic logo">
+    </div>
+    <form #loginForm="ngForm" novalidate>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked" color="primary">Input your Email</ion-label>
+          <ion-input [(ngModel)]="login.email" name="email" type="email" #email="ngModel" spellcheck="false" autocapitalize="off" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
+            required>
+          </ion-input>
+        </ion-item>
+        <ion-text color="danger">
+          <p [hidden]="email.valid || submitted === false" class="ion-padding-start">
+            Valid Email is required
+          </p>
+        </ion-text>
+        <ion-item>
+          <ion-label position="stacked" color="primary">Input your Password</ion-label>
+          <ion-input minlength="6" [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
+          </ion-input>
+        </ion-item>
+        <ion-text color="danger">
+          <p [hidden]="password.valid || submitted === false" class="ion-padding-start">
+            Password is required
+          </p>
+        </ion-text>
+      </ion-list>
+      <ion-row>
+        <ion-col>
+          <ion-button [disabled]="!loginForm.valid" (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>
