@@ -1,6 +1,6 @@
 # Ionic Angular Plan A Challenge
 
-This application is purely a login and show country holidays with of the Ionic Framework and Angular.
+This application is purely a login and shows a country holidays with of the Ionic Framework and Angular.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -20,6 +20,9 @@ This application is purely a login and show country holidays with of the Ionic F
 
 _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
 
+### APK
+
+_Note: The APK location is in the root project (challenge.apk)_
 
 ### Android
 
